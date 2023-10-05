@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import {  Container } from './styles'
+import {  Container, Background, Cover } from './styles'
+
+import { getImagens } from '../../services/utils/getImages'
 import { getMovieById, getMovieCredits, getMovieSimilar, getMovieVideos } from '../../services/getData'
 
 function Detail(){
@@ -34,9 +36,20 @@ function Detail(){
 
 
     return (
-        <Container>
-            <div>Detalhe</div>
-        </Container>
+        <>
+           {movie && (
+            <>
+            <Background image={getImagens(movie.backdrop_path)}/> 
+            <Container>
+                <Cover >
+                    <img src={getImagens(movie.poster_path)} />
+                </Cover>
+                <div>Detalhe</div>
+            </Container>
+            </>
+        )} 
+        </>
+        
     )
 }
 
