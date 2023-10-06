@@ -22,7 +22,6 @@ function Home() {
     useEffect(() => {
         async function getAllData(){
 
-            // console.time('time')
 
             Promise.all([
                 getMovies(),
@@ -36,9 +35,9 @@ function Home() {
                     setTopSeries(topSeries)
                     setTopRecommended(topRecommended)
             })
-            .catch((error) =>  console.log(error))
+            .catch((error))
 
-            // console.timeEnd('time')
+
         }
 
         getAllData()
