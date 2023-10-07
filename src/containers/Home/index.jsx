@@ -37,7 +37,6 @@ function Home() {
             })
             .catch((error))
 
-
         }
 
         getAllData()
