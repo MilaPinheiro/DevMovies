@@ -15,13 +15,22 @@ export const Container = styled.div`
     img {
         width: 30%;
     }
+
+    @media (max-width: 600px) {
+        background: red;
+   
+
+    img {
+       display: none;
+    }
+  }
 `
 
 export const Menu = styled.ul`
     display: flex;
     list-style: none;
     gap: 50px;
-
+    margin-top: 20px;
 `
 
 export const Li = styled.li`
@@ -51,4 +60,14 @@ export const Li = styled.li`
     &:hover::after {
         width: 100%;
     }
+
+
+    @media (max-width: 600px) {
+
+        font-size: 20px;
+    }
+    
 `
+
+
+

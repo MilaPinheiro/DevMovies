@@ -38,6 +38,12 @@ export const Container = styled.div `
     align-items: center;
     height: 100%;
     max-width: 1500px;
+
+    @media (max-width: 600px) {
+
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const Info = styled.div `
@@ -59,6 +65,24 @@ export const Info = styled.div `
         margin-bottom: 20px;
     }
 
+    @media (max-width: 600px) {
+        margin-top: 120px;
+        width: 90%;
+        
+       
+        h1 {
+            margin: 20px 20px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        p {
+           display: none;
+
+        }
+    }
 `
 
 export const Poster = styled.div`
@@ -73,4 +97,8 @@ export const Poster = styled.div`
 export const ContainerButtons = styled.div`
     display: flex;
     gap: 20px;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
