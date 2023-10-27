@@ -15,6 +15,7 @@ export const Background = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+   
 
     &::before {
         content: '';
@@ -35,6 +36,13 @@ export const Background = styled.div`
         height: 120px;
         background-image: linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0))
     }
+
+    @media (max-width: 600px) {
+       
+        height: 40vh;
+   
+    }
+   
 `
 
 
@@ -60,6 +68,14 @@ export const Cover = styled.div`
         box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
         animation: ${scale} 0.5s linear ;
     }
+
+    @media (max-width: 600px) {
+        img{
+            width: 300px;
+        }  
+           
+   
+    }
 `
 export const Info = styled.div`
     width: 50%;
@@ -80,6 +96,12 @@ export const Info = styled.div`
         color: #ffffff;
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+                display: none;
+           
+   
     }
 `
 
@@ -111,4 +133,8 @@ export const ContainerMovies = styled.div`
         iframe {
             border: none;
         }
+
+  
+  
+  
 `

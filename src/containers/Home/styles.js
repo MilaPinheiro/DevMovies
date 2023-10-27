@@ -72,7 +72,7 @@ export const Info = styled.div `
        
         h1 {
             margin: 20px 20px;
-            font-size: 20px;
+            font-size: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -100,5 +100,6 @@ export const ContainerButtons = styled.div`
 
     @media (max-width: 600px) {
         width: 100%;
+    
     }
 `

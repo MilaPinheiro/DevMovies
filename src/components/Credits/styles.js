@@ -25,4 +25,11 @@ export const Container = styled.div`
     img {
         height: 200px;
     }
+
+    @media (max-width: 600px) {
+            display: none;
+        
+    
+   
+    }
 `

@@ -17,6 +17,12 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
      }
+
+     @media (max-width: 600px) {
+            display: none;
+        
+   
+    }
 `
 
 
